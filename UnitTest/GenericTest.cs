@@ -8,45 +8,44 @@ namespace UnitTest
     public class GenericTest
     {
         [TestMethod]
-        public void TestMethod_One()
+        public void TestMethod1()
         {
             //Arrange
-           string firstvalue = "Satya";
-           string secondvalue = "Sai";
-           string thirdvalue = "Ram";
+            int firstvalue = 10;
+            int secondvalue = 2;
+            int thirdvalue = 3;
             //Act
             Maximum maximum = new Maximum();
-            string val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(firstvalue, val);
         }
         [TestMethod]
-        public void TestMethod_Two()
+        public void TestMethod2()
         {
             //Arrange
-            string firstvalue = "Arya";
-            string secondvalue = "sneha";
-            string thirdvalue = "Neha";
+            int firstvalue = 10;
+            int secondvalue = 20;
+            int thirdvalue = 3;
             //Act
             Maximum maximum = new Maximum();
-             string val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(secondvalue, val);
         }
         [TestMethod]
-        public void TestMethod_Three()
+        public void TestMethod3()
         {
             //Arrange
-            string firstvalue = "Charan";
-            string secondvalue = "Ram";
-            string thirdvalue = "Teja";
+            int firstvalue = 10;
+            int secondvalue = 2;
+            int thirdvalue = 30;
             //Act
-            Maximum maximum = new Maximum();
-            string val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            Maximum maximum=new Maximum();
+            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(thirdvalue, val);
         }
-
     }
 }
 
