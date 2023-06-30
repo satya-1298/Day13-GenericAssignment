@@ -15,13 +15,13 @@ namespace Generics
             string[] value_two = { "Sai", "Bridge", "Satya" };
 
             Maximum<int> obj = new Maximum<int>(value);
-            int MaxInt = obj.Number();
+            int MaxInt = obj.PrintMax();
             Console.WriteLine("Maximum value in integer is: " + MaxInt);
             Maximum<double> obj_one = new Maximum<double>(value_one);
-            double MaxDouble = obj_one.Number();
+            double MaxDouble = obj_one.PrintMax();
             Console.WriteLine("Maximum value in double is: " + MaxDouble);
             Maximum<string> obj_Two = new Maximum<string>(value_two);
-            string MaxString = obj_Two.Number();
+            string MaxString = obj_Two.PrintMax();
             Console.WriteLine("Maximum value in string is: " + MaxString);
 
             Console.ReadLine();

@@ -29,6 +29,11 @@ namespace Generics
             }
             return max;
         }
+        public T PrintMax()
+        {
+            T max = Number();
+            return max;
+        }
     }
 }
 
