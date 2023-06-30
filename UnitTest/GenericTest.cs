@@ -11,12 +11,12 @@ namespace UnitTest
         public void TestMethod1()
         {
             //Arrange
-            int firstvalue = 10;
-            int secondvalue = 2;
-            int thirdvalue = 3;
+            float firstvalue = 7.3f;
+            float secondvalue = 2.3f;
+            float thirdvalue = 3.4f;
             //Act
             Maximum maximum = new Maximum();
-            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            float val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(firstvalue, val);
         }
@@ -24,12 +24,12 @@ namespace UnitTest
         public void TestMethod2()
         {
             //Arrange
-            int firstvalue = 10;
-            int secondvalue = 20;
-            int thirdvalue = 3;
+            float firstvalue = 1.0f;
+            float secondvalue = 2.2f;
+            float thirdvalue = 1.3f;
             //Act
             Maximum maximum = new Maximum();
-            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            float val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(secondvalue, val);
         }
@@ -37,12 +37,12 @@ namespace UnitTest
         public void TestMethod3()
         {
             //Arrange
-            int firstvalue = 10;
-            int secondvalue = 2;
-            int thirdvalue = 30;
+            float firstvalue = 1.0f;
+            float secondvalue = 2.1f;
+            float thirdvalue = 3.4f;
             //Act
             Maximum maximum=new Maximum();
-            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            float val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             //Assert
             Assert.AreEqual(thirdvalue, val);
         }
