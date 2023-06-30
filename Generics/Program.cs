@@ -12,12 +12,12 @@ namespace Generics
         {
             Maximum maximum = new Maximum();
             Console.WriteLine("Enter the FirstNumber");
-            string firstvalue = Console.ReadLine();
+            int firstvalue = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the SecondNumber");
-            string secondvalue = Console.ReadLine();
+            int secondvalue = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the ThirdNumber");
-            string thirdvalue = Console.ReadLine();
-            string val = maximum.Number(firstvalue, secondvalue, thirdvalue);
+            int thirdvalue = Convert.ToInt32(Console.ReadLine());
+            int val = maximum.Number(firstvalue, secondvalue, thirdvalue);
             Console.WriteLine("{0} is largest number ", val);
             Console.ReadLine();
         }

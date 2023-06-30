@@ -8,7 +8,7 @@ namespace Generics
 {
     public class Maximum
     {
-        public string Number(string firstvalue, string   secondvalue, string thirdvalue)
+        public int Number(int firstvalue, int   secondvalue, int thirdvalue)
         {
             //TestCase-1
             if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
