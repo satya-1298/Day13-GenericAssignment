@@ -10,18 +10,19 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            int num = 6, num_one = 7, num_two = 8;
-            float dec = 3.3f, dec_one = 7.5f, dec_two = 0.7f;
-            string word = "Sai", word_one = "Satya", word_Two = "Zee";
-            Maximum<int> maximum = new Maximum<int>(num, num_one, num_two);
-            int values = maximum.MaxMethod();
-            Console.WriteLine("{0} is the largest", values);
-            Maximum<float> maximum_one = new Maximum<float>(dec, dec_one, dec_two);
-            float values_one = maximum_one.MaxMethod();
-            Console.WriteLine("{0} is the largest", values_one);
-            Maximum<string> maximum_two = new Maximum<string>(word, word_one, word_Two);
-            string values_two = maximum_two.MaxMethod();
-            Console.WriteLine("{0} is the largest", values_two);
+            int[] value = { 1, 2, 3, 4, 5 };
+            double[] value_one = { 9.4, 5.7, 8.4, 3.6 };
+            string[] value_two = { "Sai", "Bridge", "Satya" };
+
+            Maximum<int> obj = new Maximum<int>(value);
+            int MaxInt = obj.Number();
+            Console.WriteLine("Maximum value in integer is: " + MaxInt);
+            Maximum<double> obj_one = new Maximum<double>(value_one);
+            double MaxDouble = obj_one.Number();
+            Console.WriteLine("Maximum value in double is: " + MaxDouble);
+            Maximum<string> obj_Two = new Maximum<string>(value_two);
+            string MaxString = obj_Two.Number();
+            Console.WriteLine("Maximum value in string is: " + MaxString);
 
             Console.ReadLine();
         }
