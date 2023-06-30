@@ -8,7 +8,7 @@ namespace Generics
 {
     public class Maximum
     {
-        public float Number(float firstvalue, float   secondvalue, float thirdvalue)
+        public T Number<T>(T firstvalue, T secondvalue, T thirdvalue) where T : IComparable
         {
             //TestCase-1
             if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
@@ -33,6 +33,7 @@ namespace Generics
             }
             return firstvalue;
         }
+
 
     }
 }
